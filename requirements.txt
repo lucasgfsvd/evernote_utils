@@ -1,0 +1,7 @@
+# Required
+lxml>=5
+beautifulsoup4>=4.12
+python-slugify>=8
+
+# Optional — only needed if you enable the "PDF per note" option
+weasyprint>=60
