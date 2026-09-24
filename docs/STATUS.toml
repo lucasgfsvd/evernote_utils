@@ -1,0 +1,26 @@
+# What this repo is, where it stands, and what it needs next.
+#
+# Read by My-Dashboard's repo-radar job (tasks/repo-radar) to build the /repos
+# overview across every repo. Nothing parses this repo's code -- this file is the
+# whole contract, so keep it true. `updated` is load-bearing: the radar counts the
+# commits landed since that date and flags the file as stale rather than showing
+# an obsolete description.
+#
+# Seeded from this repo's own documentation (README.md, requirements.txt).
+
+
+schema = 1
+
+purpose = "A single-script local GUI tool that converts old Evernote .enex exports into a browsable folder of HTML notes (plus extracted attachments, an index page and optional per-note PDFs) with no Evernote account or API needed."
+
+# idea | prototype | active | maintenance | paused | archived
+stage = "maintenance"
+
+# The date this file was last made true.
+updated = 2026-09-24
+
+# The real next moves, most important first - taken from this repo's docs.
+next_actions = [
+  "Unwrap Evernote per-note encryption: <en-crypt> content is currently passed through as-is (README, 'Limitations').",
+  "Render calendar/reminder metadata specially instead of only preserving it as note metadata (README, 'Limitations').",
+]
